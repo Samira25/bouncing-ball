@@ -1,69 +1,79 @@
 #size{
 	height: 300px;
-	width: 300px;
+	width: 200px;
 	display: block;
 	margin-left: auto;
-    margin-right: auto;
-    border: 1px solid grey;
-    border-radius: 15px;
+        margin-right: auto;
+        border: 1px solid grey;
+        border-radius: 15px;
 }
 #red {
 	float: left;
 	display: block;
 	margin-left: auto;
-    margin-right: auto;
+        margin-right: auto;
 	width: 50px;
 	height: 50px;
 	background: red;
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
-	-webkit-animation: redmover 1s infinite  alternate;
-    animation: redmover 1s infinite  alternate;
+	-moz-animation: redball 1s infinite  alternate;
+	-webkit-animation: redball 1s infinite  alternate;
+        animation: redball 1s infinite  alternate;
 }
 #green {
 	float: right;
 	display: block;
 	margin-left: auto;
-    margin-right: auto;
+        margin-right: auto;
 	width: 50px;
 	height: 50px;
 	background: green;
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
-	-webkit-animation: greenmover 1s infinite  alternate;
-    animation: greenmover 1s infinite  alternate;
+	-moz-animation: greenball 1s infinite  alternate;
+	-webkit-animation: greenball 1s infinite  alternate;
+        animation: greenball 1s infinite  alternate;
 }
-@-webkit-keyframes redmover {
-    0% { 
+@-webkit-keyframes redball {
+    0% {
+    	-webkit-transform: translateY(0);
     	transform: translateY(0); 
     }
-    100% { 
+    100% {
+    	-webkit-transform: translateY(250px);
     	transform: translateY(250px); 
     }
 }
-@keyframes redmover {
-    0% { 
+@keyframes redball {
+    0% {
+    	-webkit-transform: translateY(0);
     	transform: translateY(0); 
     }
-    100% { 
+    100% {
+    	-webkit-transform: translateY(250px);
     	transform: translateY(250px); 
     }
 }
-@-webkit-keyframes greenmover {
+@-webkit-keyframes greenball {
     100% { 
+    	-webkit-transform: translateY(0);
     	transform: translateY(-1); 
     }
     0% { 
+    	-webkit-transform: translateY(250px);
     	transform: translateY(250px); 
     }
 }
-@keyframes greenmover {
+@keyframes greenball {
     100% { 
+    	-webkit-transform: translateY(0);
     	transform: translateY(0); 
     }
     0% { 
+    	-webkit-transform: translateY(250px);
     	transform: translateY(250px); 
     }
 }
